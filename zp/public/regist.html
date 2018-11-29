@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/regist.css">
+  <title>注册</title>
+ </head>
+ <body>
+     <!-- 注册页面头部 -->
+     <div class="regist-head">
+         <img src="img/regist/logo.png" width="292" class="regist-head-left" height="46" border="0" alt="">
+         <span class="regist-head-right">已有账号？<a href="">请登录></a></span>
+     </div>
+     <!-- 注册页面内容 -->
+     <div class="reg">
+         <ul class="reg-sec">
+             <li class="reg-text">
+                 <span>注册即送</span>
+                 <span class="reg-specialRed">500</span><span>醉品茶城积分</span>
+             </li>
+             <li>
+			       <input type="text" placeholder="手机号码" id="uname" onblur="checkUname()"></li><span id="showUname"></span>
+             <li><input type="password" placeholder="6-16位密码" id="upwd"></li>
+             <li><input type="password" placeholder="再次输入密码"></li>
+             <li><input type="text" placeholder="验证码"></li>
+             <li><input type="text" placeholder="短信验证码"></li>
+						 <li><input type="submit" value="立即注册" onclick="register()">
+						</li>
+			 <script src="common.js"></script>
+	<script>
+	//声明全局变量，用于控制是否允许注册
+	  var isRegister=false; 
+	  function checkUname(){
+	    var xhr=createXhr();
+		xhr.onreadystatechange=function(){
+		  if (xhr.readyState==4&&xhr.status==200){
+			  var res =xhr.responseText;
+		    if(res=="1"){$("showUname").innerHTML="用户名已存在！";
+			isRegister=false;
+		    }else{
+			  $("showUname").innerHTML="用户名可用"
+			  isRegister=true;
+			}
+		  }
+		}
+		var uname=$("uname").value;
+		xhr.open("get","/user/selectUname?uname="+uname,true);
+		xhr.send(null);
+	  }
+	function register(){
+	 if(isRegister==true){
+	  var xhr=createXhr();
+	  xhr.onreadystatechange=function(){
+	    if(xhr.readyState==4&&xhr.status==200){
+		  var res=xhr.responseText;
+		  if(res=="1"){
+		    window.location="login.html";
+		  }else{
+		    alert("注册成功！")
+		  }
+		}
+	  }
+	  xhr.open("post","/user/register",true);
+	  xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+	  var uname=$("uname").value;
+	  var upwd=$("upwd").value;
+	  var data="uname="+uname+"&upwd="+upwd;
+	  xhr.send(data);
+	 }else{
+	   alert("请检查注册信息")
+	 }
+	}
+	</script>
+             <li class="reg-sec-bottom"><span>点击“立即注册”，即表示您同意并愿意遵守醉品</span><a href="">用户协议</a><span>和</span><a href="">隐私政策</a></li>
+         </ul>
+     </div>
+     <!-- 注册页面尾部 -->
+     <div class="reg-foot-text"><p>Copyright&nbsp;2010&nbsp;-&nbsp;2018&nbsp;醉品茶城&nbsp;厦门醉品春秋网络科技有限公司</p></div>
+ </body>
+</html>

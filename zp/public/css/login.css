@@ -1,0 +1,250 @@
+body{
+    margin:0;
+    padding:0;
+}
+.login-head{
+    height:100px;
+    padding-left: 150px;
+}
+.d1{
+    height:100px;
+    width: 100%;
+}
+.login-logo{
+    height:46px;
+    margin-top:34px;
+}
+#zuipin-content{
+    width: 100%;
+    height:584px;
+    margin:0;
+    overflow-y: hidden;
+    position: relative;
+    padding:0;
+}
+.right-table{
+   width: 380px;
+   height: 524px;
+   box-sizing: border-box;
+   margin-top: -550px;
+   padding: 30px;
+   background-color:#fff ;
+   position: relative;
+   margin-left: 1220px;
+   position: absolute;
+}
+.login-tab li {
+   float: left;
+   width: 44%;
+   text-align: center;
+   color: #333333;
+   font-size: 18px;
+   cursor: pointer;
+}
+li{
+    list-style:none;
+}
+.login-tab li.on{
+    color:red;
+}
+.login-picture{
+    width:500px;
+    height: 585px;
+    padding-left:233px;
+}
+.login-tab li{
+    font-size: 18px;
+    cursor:pointer;
+    float:left;
+    text-align: center;
+}
+.right-table ul li input{
+    width:318px;
+    height: 44px;
+}
+#uname{
+    margin-top:37px;
+    margin-left: -35px;
+}
+#upwd,#btn{
+    margin-left:-35px;
+    margin-top:17px;
+}
+.btn-foot a{
+    color:rgba(100, 100,100,0.58);
+    padding:32px;
+}
+#other-way{
+    line-height: 40px;
+    color:#bbbbbb;
+    text-align:center;
+    font-size:12px;
+    position:relative;
+    top:60px;
+}
+.other-way-login li a{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    text-decoration: none;
+    margin:55px 25px;
+    font-size: 12px;
+}
+.clearfix{
+    text-decoration: none;
+    font-size: 14px;
+}
+.foot-text li span{
+    float: left;
+}
+.foot-text li{
+    line-height: 32px;
+    padding:0 61px 0 0px;
+    float:left;
+    margin-left: 80px;
+    border-right:1px solid black; 
+    text-align: center;
+}
+.foot-text{
+    width:100%;
+    height:32px;
+    padding-left:0px !important;
+}
+#the-last{
+    border-right:none;
+}
+dl{
+    float:left;
+    text-align: center;
+    margin-left: -10px;
+}
+a{
+    text-decoration: none;
+    color:rgba(100, 100,100,0.58);
+    outline:none;
+}
+a:hover{
+    color:red;
+}
+dl dt{
+    margin-left:83px;
+}
+dd{
+    margin-left: 83px;
+    margin:13px 0 0 83px;
+}
+.foot .foot-tim p{
+    text-align:center;
+    font-size:14px;
+}
+.foot{
+    padding:40px 100px 40px 100px;
+}
+.foot-tim{
+    float:left;
+    text-align: center;
+    width:227px;
+    height:145px;
+    margin-left:77px;
+    margin-top:10px;
+    border-left:1px solid #e0e0e0;
+}
+#online-server{
+    height:30px;
+    width:120px;
+    border:1px solid orange;
+    text-align: center;
+    color: #ff3600;
+    padding:5px 37px 5px;
+    transition-duration: 0.5s;
+    margin-top:50px;
+    position:relative;
+    top:55px;
+    z-index:1;
+}
+#phone-n{
+    font-size: 24px;
+    color:#ff3600 ;
+    margin:0;
+    padding:0;
+}
+#online-server:hover{
+    border:1px solid #ff3600;
+    background-color:#ff3600;
+    color:white;
+}
+.foot-pic{
+    color:#757575;
+    width:175px;
+    height:145px;
+    float:right;
+    margin-right:281px;
+    border-left:1px solid #e0e0e0;
+}
+.foot-pic img{
+    margin-left:53px;
+}
+.foot-pic p{
+    margin-left:60px;
+}
+.foot::after{
+    content:" ";
+    clear:both;
+    display:block;
+}
+.foot-bottom{
+    width:100%;
+    padding:30px 0;
+    background-color:#333333;
+    float: left;
+}
+#foot-bg:before{
+    display:block;
+    content:"";
+    clear:both;
+}
+#foot-afterbigz{
+    float:left;
+}
+.about-us{
+    padding:0 10px;
+    display:inline;
+}
+#foot-bigz{
+    margin:auto 80px;
+}
+#foot-bg div{
+    float: left;
+}
+.about-us li{
+    line-height: 30px;
+    float:left;
+    text-align:center;
+    margin-right:25px;
+}
+.about-us::after{
+    display:block;
+    content:"";
+    clear:both;
+}
+#company{
+    height:16px;
+    font-size:12px;
+    margin-bottom: 6px;
+    margin-top:-15px;
+}
+#company::after,#foot-number::before{
+    display:block;
+    content:"";
+    clear:both;
+}
+#foot-afterbigz #foot-number{
+    margin:6px 0;
+}
+#foot-afterbigz p,#foot-afterbigz span{
+    color:rgba(100, 100,100,0.58);
+}
+#after-dt ul li{
+    float:left;
+    margin-left:80px;
+}

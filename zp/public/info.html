@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/info.css">
+    <style>
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+          
+              }
+              .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+          
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+              }
+    </style>
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="zuipin-wrapper clearfix" style="height:40px;">
+                        <div class="float-left join-zp">
+                            <ul class="header-join clearfix">
+                                <li>
+                                    <a href="main.html" target="_blank">醉品茶城首页</a>
+                                </li>
+                                <li>
+                                    <a href="">OMO体验店加盟</a>
+                                </li>
+                                <li class="zp-tel">
+                                    <a href="">醉品茶城手机版</a>
+                                    <div class="header-qr">
+                                        <img src="img/main/phone_qr.jpg" alt="">手机登录购买
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 购物车 -->
+                        <div class="float-right cart-info">
+                            <dl>
+                                <dt class="cart-list">
+                                    <a href="" class="shop">购物车</a>
+                                </dt>
+                            </dl>
+                        </div>
+                        <!-- header中间模块 -->
+                        <div class="header-middle-div">
+                            <ul class="header-middle">
+                                <li><a href="login.html" target="_blank">登录</a></li>
+                                <li><a href="regist.html" target="_blank">注册</a></li>
+                                <li><a href="javascript:;">我的订单</a></li>
+                                <li><a href="##">帮助中心</a></li>
+                                <li><a href="#">关于醉品</a></li>
+                                <li><a href="###">4006-066-068</a></li>
+                            </ul>
+                        </div>
+            </div>
+        </header>
+            <!-- header end -->
+            <!-- 顶部横幅 -->
+        <div class="top-hf" style="position:relative;background: url('img/main/20181008_10.8-10.22-重阳节活动-顶通广告.gif')">
+            <a href="main.html" target="_blank"></a>
+        </div>
+            <!-- 横幅 end -->
+            <!-- head-search start -->
+        <div class="head-search">
+                    <div class="head-search-small">
+                        <div class="head-searchlogo">
+                            <a href=""><img src="img/main/zp_logo_u2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="head-search-main">
+                            <input type="text" class="search-text">
+                            <input type="submit" class="search-pic">
+                            <a href="">白茶</a>
+                            <a href="">广东单枞</a>
+                            <a href="">龙井</a>
+                            <a href="">金骏眉</a>
+                            <a href="">普洱</a>
+                        </div>
+                        <div class="head-search-qrcode float-right">
+                            <img src="img/main/phone_qr.jpg" style="width:60px;height:60px;" alt="">
+                            <p>手机登录购买<p>
+                        </div>
+                        <div class="head-search-behind float-right">
+                            <ul>
+                                <li class="float-left">全场商品90天保价</li>
+                                <li class="float-left">满59元免邮费</li>
+                                <li class="float-left">2000城市货到付款</li>
+                            </ul>
+                        </div>
+                    </div>
+        </div>
+        <div class="head-seal">
+            <div class="head-seal-all" id="kind">三全部商品分类</div>
+            <!--轮播图左边的框框-->
+            <div class="swiper-box" id="kb" style="display:none">
+                        <dd class="sb-second">
+                            <dl>
+                                <dt class="big-title float-left">
+                                    <a href="">乌龙茶</a>
+                                </dt>
+                                <dd class="float-left">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <a href="">安溪铁观音</a>
+                                        </li>
+                                        <li>
+                                            <a href="">武夷岩茶</a>
+                                        </li>
+                                        <li>
+                                            <a href="">广东单枞</a>
+                                        </li>
+                                        <li>
+                                            <a href="">漳平水仙</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <div class="colunm-more">
+                                    <ul>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">安溪铁观音</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">武夷岩茶</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">广东单枞</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">漳平水仙</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">台湾高山茶</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">其他乌龙茶</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </dl>
+                            <dl>
+                                <dt class="big-title float-left">
+                                    <a href="">红茶</a>
+                                </dt>
+                                <dd class="float-left">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <a href="">金骏眉</a>
+                                        </li>
+                                        <li>
+                                            <a href="">正山小种</a>
+                                        </li>
+                                        <li>
+                                            <a href="">祁门红茶</a>
+                                        </li>
+                                        <li>
+                                            <a href="">云南滇红</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <div class="colunm-more">
+                                    <ul>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">金骏眉</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">正山小种</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">祁门红茶</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">云南滇红</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">凌云白毫红茶</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">英德红茶</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">锡兰红茶</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">其他红茶</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </dl>
+                            <dl>
+                                <dt class="big-title float-left">
+                                    <a href="">绿茶</a>
+                                </dt>
+                                <dd class="float-left">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <a href="">龙井</a>
+                                        </li>
+                                        <li>
+                                            <a href="">四川绿茶</a>
+                                        </li>
+                                        <li>
+                                            <a href="">信阳毛尖</a>
+                                        </li>
+                                        <li>
+                                            <a href="">碧螺春</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <div class="colunm-more">
+                                    <ul>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">龙井</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">四川绿茶</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">信阳毛尖</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">碧螺春</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">黄山毛峰</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">六安瓜片</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">太平猴魁</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">安吉白茶</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">云南滇绿</a>
+                                        </li>
+                                        <li class="colunm-small clearfix">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">凌云白毫绿茶</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </dl>
+                            <dl>
+                                <dt class="big-title float-left">
+                                    <a href="">黑茶</a>
+                                </dt>
+                                <dd class="float-left">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <a href="">普洱茶</a>
+                                        </li>
+                                        <li>
+                                            <a href="">安化黑茶</a>
+                                        </li>
+                                        <li>
+                                            <a href="">柑普茶</a>
+                                        </li>
+                                        <li>
+                                            <a href="">六堡茶</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <div class="colunm-line">
+                                    <ul>
+                                        <li class="line-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">普洱茶</a>
+                                        </li>
+                                        <li class="line-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">安化黑茶</a>
+                                        </li>
+                                        <li class="line-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">柑普茶</a>
+                                        </li>
+                                        <li class="line-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">藏茶</a>
+                                        </li>
+                                        <li class="line-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">六堡茶</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </dl>
+                            <dl>
+                                <dt class="big-title float-left">
+                                    <a href="">白茶</a>
+                                </dt>
+                                <dd class="float-left">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <a href="">福鼎白茶</a>
+                                        </li>
+                                        <li>
+                                            <a href="">其他白茶</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <div class="colunm-line">
+                                    <ul>
+                                        <li class="line-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">福鼎白茶</a>
+                                        </li>
+                                        <li class="line-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">其他白茶</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </dl>
+                            <dl>
+                                <dt class="big-title float-left">
+                                    <a href="">花茶</a>
+                                </dt>
+                                <dd class="float-left">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <a href="">茉莉花茶</a>
+                                        </li>
+                                        <li>
+                                            <a href="">玫瑰花茶</a>
+                                        </li>
+                                        <li>
+                                            <a href="">菊花茶</a>
+                                        </li>
+                                        <li>
+                                            <a href="">其他花茶</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <div class="colunm-line">
+                                    <ul>
+                                        <li class="line-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">茉莉花茶</a>
+                                        </li>
+                                        <li class="line-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">玫瑰花茶</a>
+                                        </li>
+                                        <li class="line-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">菊花茶</a>
+                                        </li>
+                                        <li class="line-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">其他花茶</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </dl>
+                            <dl>
+                                <dt class="big-title float-left">
+                                    <a href="">茶器</a>
+                                </dt>
+                                <dd class="float-left">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <a href="">陶瓷茶具</a>
+                                        </li>
+                                        <li>
+                                            <a href="">紫砂茶具</a>
+                                        </li>
+                                        <li>
+                                            <a href="">玻璃茶具</a>
+                                        </li>
+                                        <li>
+                                            <a href="">茶盘</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <div class="colunm-more">
+                                    <ul>
+                                        <li class="colunm-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">陶瓷茶具</a>
+                                        </li>
+                                        <li class="colunm-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">紫砂茶具</a>
+                                        </li>
+                                        <li class="colunm-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">玻璃茶具</a>
+                                        </li>
+                                        <li class="colunm-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">茶盘</a>
+                                        </li>
+                                        <li class="colunm-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">建盏</a>
+                                        </li>
+                                        <li class="colunm-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">茶道配件</a>
+                                        </li>
+                                        <li class="colunm-small">
+                                            <a href="">
+                                                <img src="img/main/tieguanyin.jpg" alt="">
+                                            </a>
+                                            <a href="">铁艺</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </dl>
+                        </dd>
+            </div>
+            <div class="head-seal-main">
+                        <ul>
+                            <li><a href="">品牌集成馆</a></li>
+                            <li><a href="">大师名匠馆</a></li>
+                            <li><a href="">线下OMO体验店</a></li>
+                            <li><a href="">积分商城</a></li>
+                        </ul>
+            </div>
+        </div>
+        <div class="content">
+                    <div class="zuipin-wrapper">
+                        <ul>
+                            <li>
+                                <a href="main.html">首页</a>
+                            </li>
+                        </ul>
+                    </div>
+        </div>
+        <!--轮播开始-->
+        <div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/info/20181029列表轮播1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/info/20181101列表页轮播2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/info/3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/info/4.jpg" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <script src="js/swiper.min.js"></script>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+        </div>
+        <div class="category-list">
+            <div class="zuipin-wrapper">
+                <ul class="clearfix">
+                    <li> <a href="" class="grey">品类:</a></li>
+                    <li><a href="">全部</a></li>
+                    <li><a href="">安溪铁观音</a></li>
+                    <li><a href="">武夷岩茶</a></li>
+                    <li><a href="">广东单枞</a></li>
+                    <li><a href="">漳平水仙</a></li>
+                    <li><a href="">台湾高山茶</a></li>
+                    <li><a href="">其他乌龙茶</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sel-list on">
+            <div class="zuipin-wrapper">
+                <div class="list-todo" id="listToDo">
+                    <ul class="clearfix">
+                        <li><a href="" class="grey">品牌:</a></li>
+                        <li><a href="">全部</a></li>
+                        <li><a href="">醉品朴茶</a></li>
+                        <li><a href="">魏荫名茶</a></li>
+                        <li><a href="">三和</a></li>
+                        <li><a href="">冠和</a></li>
+                        <li><a href="">其他品牌</a></li>
+                        <li><a href="">浓韵汇</a></li>
+                        <li><a href="">醉品叶界</a></li>
+                        <li><a href="">一匠一品</a></li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li><a href="" class="grey">净含量:</a></li>
+                        <li><a href="">全部</a></li>
+                        <li><a href="">501-1000克</a></li>
+                        <li><a href="">251-500克</a></li>
+                        <li><a href="">50克以下</a></li>
+                        <li><a href="">50-100克</a></li>
+                        <li><a href="">101-250克</a></li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li><a href="" class="grey">等级:</a></li>
+                        <li><a href="">全部</a></li>
+                        <li><a href="">特级</a></li>
+                        <li><a href="">一级</a></li>
+                        <li><a href="">二级</a></li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li><a href="" class="grey">用途:</a></li>
+                        <li><a href="">全部</a></li>
+                        <li><a href="">自饮</a></li>
+                        <li><a href="">送礼(简装礼盒)</a></li>
+                        <li><a href="">送礼(精装礼盒)</a></li>
+                    </ul>
+                </div>
+                <div class="list-item clearfix">
+                    <ul class="clearfix float-right">
+                        <li><a href="">销量</a></li>
+                        <li><a href="">新品</a></li>
+                        <li><a href="">价格</a><span>↓</span></li>
+                        <li><a href="">评论最多</a></li>
+                    </ul>
+                </div>
+                <div class="upanddown"><span class="up" id="uad">&gt;</span></div>
+            </div>
+        </div>
+        <!-- 商品列表 -->
+        <div class="good-list clearfix">
+            <div class="zuipin-wrapper clearfix">
+               <!-- <div class="item float-left">
+                    <dl>
+                        <dt>
+                            <a href=""><img src="img/info/安溪铁观音/1.jpg" alt=""></a>
+                        </dt>
+                        <dd>
+                            <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                            <p class="goodsPing">秋茶抢鲜上市</p>
+                        </dd>
+                        <dd>
+                            <p class="nowPrice">￥65</p>
+                        </dd>
+                        <dd>
+                            <p class="peoplegood">281人好评</p>
+                        </dd>
+                        <dd class="cart-show">
+                            <p class="p red-buy addToCart">
+                                <span>加入购物车</span>
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/2.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                            <dl>
+                                <dt>
+                                    <a href=""><img src="img/info/安溪铁观音/3.jpg" alt=""></a>
+                                </dt>
+                                <dd>
+                                    <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                    <p class="goodsPing">秋茶抢鲜上市</p>
+                                </dd>
+                                <dd>
+                                    <p class="nowPrice">￥65</p>
+                                </dd>
+                                <dd>
+                                    <p class="peoplegood">281人好评</p>
+                                </dd>
+                                <dd class="cart-show">
+                                    <p class="p red-buy addToCart">
+                                        <span>加入购物车</span>
+                                    </p>
+                                </dd>
+                            </dl>
+                </div>
+                <div class="item float-left">
+                                <dl>
+                                    <dt>
+                                        <a href=""><img src="img/info/安溪铁观音/4.jpg" alt=""></a>
+                                    </dt>
+                                    <dd>
+                                        <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                        <p class="goodsPing">秋茶抢鲜上市</p>
+                                    </dd>
+                                    <dd>
+                                        <p class="nowPrice">￥65</p>
+                                    </dd>
+                                    <dd>
+                                        <p class="peoplegood">281人好评</p>
+                                    </dd>
+                                    <dd class="cart-show">
+                                        <p class="p red-buy addToCart">
+                                            <span>加入购物车</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/5.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/6.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/7.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/8.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/9.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/10.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/11.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/12.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/13.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/14.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/15.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/16.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/17.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/18.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/19.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="item float-left">
+                        <dl>
+                            <dt>
+                                <a href=""><img src="img/info/安溪铁观音/20.jpg" alt=""></a>
+                            </dt>
+                            <dd>
+                                <p class="new-goodsSomething">一匠一品 2018年秋茶 安溪铁观音名匠刘文品代表作 特级 50g</p>
+                                <p class="goodsPing">秋茶抢鲜上市</p>
+                            </dd>
+                            <dd>
+                                <p class="nowPrice">￥65</p>
+                            </dd>
+                            <dd>
+                                <p class="peoplegood">281人好评</p>
+                            </dd>
+                            <dd class="cart-show">
+                                <p class="p red-buy addToCart">
+                                    <span>加入购物车</span>
+                                </p>
+                            </dd>
+                        </dl>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="foot-head">
+                <ul class="foot-text">
+                    <li class="clearfix">
+                        <span>原产地直供</span>
+                    </li>
+                    <li class="clearfix">
+                        <span>1000家合作社联盟</span>
+                    </li>
+                    <li class="clearfix">
+                        <span>10万亩茶园直供</span>
+                    </li>
+                    <li class="clearfix">
+                        <span>90天商品保价</span>
+                    </li>
+                    <li class="clearfix">
+                        <span>30天商品退换货</span>
+                    </li>
+                    <li class="clearfix" id="the-last">
+                        <span>满59元免运费</span>
+                    </li>
+                </ul>
+            </div>
+
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a href="https://www.zuipin.cn/page/shopping#g1">购物保障</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/shopping#g2">积分政策</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/shopping#g3">企业用户</a></dd>
+            </dl>
+            <dl>
+                <dt>配送方式</dt>
+                <dd><a href="https://www.zuipin.cn/page/distance#a-1">快递资费</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/distance#a-1">配送时间</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/distance#a-2">配送范围</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/distance#a-3">验货签收</a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd><a href="https://www.zuipin.cn/page/paymethod#hdfk">货到付款</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/paymethod#wsyh">在线支付</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/paymethod#zfb">网银在线</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/paymethod#yhzz">银行转账 </a></dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd><a href="https://www.zuipin.cn/page/service#thyz">退换货原则</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/service#thyz">退换货要求</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/service#thyz">运费规则</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/service#thlc">退换货流程 </a></dd>
+            </dl>
+            <dl>
+                <dt>OMO体验店</dt>
+                <dd><a href="https://www.zuipin.cn/page/expstore">加盟政策</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/expstore">网点分布</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/expstore">合作加盟</a></dd>
+            </dl>
+            <dl>
+                <dt>关于醉品</dt>
+                <dd><a href="https://www.zuipin.cn/page/about">关于我们</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/fzlc">醉品动态</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/mtsy">媒体声音</a></dd>
+                <dd><a href="https://www.zuipin.cn/page/ppjc">品牌集成</a></dd>
+            </dl>
+            <div class="foot-tim">
+                <p id="phone-n">4006-066-068</p>
+                <p>
+                    <span id="open-time">周一至周日 08:40-22:30</span>
+                </p>
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=800002599&site=qq&menu=yes" rel="nofollow" target="_blank" id="online-server">在线客服</a>
+            </div>
+            <div class="foot-pic">
+                <img src="img/login/phone_qr.jpg" alt="">
+                <p>醉品茶城手机版</p>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <div id="foot-bg">
+                <div id="foot-section">
+                    <div id="foot-bigz">
+                        <img src="img/login/zui.png" alt="">
+                    </div>
+                    <div id="foot-afterbigz">
+                        <ul class="about-us">
+                            <li><a href="https://www.zuipin.cn/page/about">关于我们</a></li>
+                            <li><a href="https://www.zuipin.cn/page/privacystatement">版权申明</a></li>
+                            <li><a href="https://www.zuipin.cn/page/expstore#from">成为代理商</a></li>
+                            <li><a href="https://www.zuipin.cn/page/touchwe">联系我们</a></li>
+                        </ul>
+                        <div id="company" style="float:none">
+                            <p>&copy;&nbsp;2010&nbsp;-&nbsp;2018&nbsp;醉品茶城&nbsp;厦门醉品春秋网络科技有限公司</p>
+                        </div>
+                        <div id="foot-number">
+                            <span>zuipin.cn&nbsp;All&nbsp;Rights&nbsp;Reserved</span>
+                            <a href="http://www.miibeian.gov.cn/">闽ICP备10200063号-1</a>
+                        </div>
+                    </div>
+                    <div id="drink-tea" style="margin:18px 50px 18px 50px;">
+                        <img src="img/login/pincha.png" alt="">
+                    </div>
+                    <div id="after-dt">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">
+                                    <span>海峡两岸茶业交流协会<br>互联网分会</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <span>315安全服务<br>保障认证</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ss.knet.cn/verifyseal.dll?sn=e17042635020067530bbzh000000&ct=df&a=1&pa=0.2162446110316898">
+                                    <span>可信网站<br>示范企业</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://v.pinpaibao.com.cn/cert/site/?site=www.zuipin.cn&at=realname">
+                                    <span>安全联盟<br>实名验证</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.zuipin.cn/businessLicense">
+                                    <span>工商执照<br>经营允许</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="consultation-item" id="consultation-item">
+        <div class="consultion-gif">
+            <p>
+                <a href="">
+                    <img src="img/info/20180925dongtu.gif" alt="">
+                </a>
+            </p>
+        </div>
+        <div class="consultion-text">
+            <p>客服</p>
+            <div class="seller-content">
+                <p class="seller">
+                    <a href="">
+                        <span>售前咨询</span>
+                    </a>
+                </p>
+                <p class="seller">
+                    <a href="">
+                        <span>售后咨询</span>
+                    </a>
+                </p>
+                <p class="seller">
+                    <a href="">
+                        <span>招商加盟</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="consultion-text">
+            <p>热线</p>
+            <div class="consultion-content phone-content">
+                <p class="zpphone">醉品热线</p>
+                <p class="phone">4006-066-068</p>
+                <p class="time">08:40 - 22:30</p>
+                <p class="week">(周一至周日)</p>
+            </div>
+        </div>
+        <div class="consultion-text">
+            <p>服务号</p>
+            <div class="consultion-content serve-content">
+                <img src="img/main/phone_qr.jpg" alt="">
+            </div>
+        </div>
+        <div class="consultion-top">
+            <p>顶部</p>
+        </div>
+    </div>   
+    
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src= "js/info.js"></script>
+    <script>
+        $(function(){
+            var $kind=$("#kind");
+            var $kb=$("#kb");
+            $kind.on("mouseenter",function(){
+                $kb.on("mouseenter",function(){
+                    $kb.css("display","block")
+                });
+                $kb.on("mouseleave",function(){
+                    $kb.css("display","none")
+                })
+                $kb.css("display","block")
+            });
+            $kind.on("mouseleave",function(){
+                $kb.css("display","none")
+            })
+
+            /*控制点击span标签实现上下切换和显示隐藏上方内容*/
+            var $uad = $("#uad");
+            var $listToDo = $("#listToDo");
+            $uad.on("click",function(){
+                if($uad.hasClass("up")){
+                $uad.removeClass("up");
+                $listToDo.addClass("all")
+                $uad.addClass("down");
+                }else{
+                    $uad.removeClass("down");
+                    $uad.addClass("up");
+                    $listToDo.removeClass("all");
+                }
+            })
+
+            var $kf = $("#consultation-item .consultion-text")[0];
+            var $rx = $(".consultation-item .consultion-text")[1];
+            var $fwh = $(".consultation-item .consultion-text")[2];
+            console.log($kf);
+            $($kf).on("mouseenter",function(){
+                $(this).children().last().css("display","block");
+            })
+            $($kf).on("mouseleave",function(){
+                $(this).children().last().css("display","none");
+            })
+            $($rx).on("mouseenter",function(){
+                $(this).children().last().css("display","block");
+            })
+            $($rx).on("mouseleave",function(){
+                $(this).children().last().css("display","none");
+            })
+            $($fwh).on("mouseenter",function(){
+                $(this).children().last().css("display","block");
+            })
+            $($fwh).on("mouseleave",function(){
+                $(this).children().last().css("display","none");
+            })
+        })
+    </script>
+</body>
+</html>
