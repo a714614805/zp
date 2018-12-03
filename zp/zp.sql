@@ -214,3 +214,4 @@ CREATE TABLE `zp_user` (
 -- ----------------------------
 INSERT INTO `zp_user` VALUES ('1', '15776454412', '15776454412');
 INSERT INTO `zp_user` VALUES ('2', '13886861888', '13333334412');
+INSERT INTO `zp_user` VALUES ('3', '123456', '123456');
