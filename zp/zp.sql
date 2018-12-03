@@ -12,6 +12,10 @@ File Encoding         : 65001
 
 Date: 2018-11-05 21:52:43
 */
+set names UTF8;
+drop database if exists zp;
+create database zp charset=UTF8;
+use zp;
 
 SET FOREIGN_KEY_CHECKS=0;
 
